@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Awareness Tree</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js CDN -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('cyber-security.jpg'); /* Replace with your image URL or path */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-attachment: fixed; /* Keeps the background fixed during scrolling */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents repetition of the image */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: rgba(44, 62, 80, 0.8); /* Semi-transparent background */
+            color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .tree {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .branch {
+            margin: 20px;
+            cursor: pointer;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid #ccc;
+        }
+
+        .sticky-note:nth-child(1) {
+            background-color: #1e3a8a;
+        }
+
+        .sticky-note:nth-child(2) {
+            background-color: #00ff66;
+        }
+
+        .sticky-note:nth-child(3) {
+            background-color: #6a0dad;
+        }
+
+        .sticky-note:nth-child(4) {
+            background-color: #00bcd4;
+        }
+
+        .sticky-note:nth-child(5) {
+            background-color: #00d9ff;
+        }
+
+        .branch:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+        }
+
+        .sticky-note {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .sticky-note:hover {
+            background-color: #f1c40f;
+        }
+
+        .content {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .active-content {
+            display: block;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: #3498db;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #2980b9;
+        }
+
+        #chart-container {
+            width: 80%;
+            margin: 40px auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cybersecurity Awareness</h1>
+</header>
+
+<div class="tree">
+    <div class="branch" onclick="showContent(1)">
+        <div class="sticky-note">Chapter One: What is Scamming?</div>
+        
+    </div>
+    <div class="branch" onclick="showContent(2)">
+        <div class="sticky-note">Chapter Two: Common Types of Scams</div>
+    </div>
+    <div class="branch" onclick="showContent(3)">
+        <div class="sticky-note">Chapter Three: How Scammers Trick People</div>
+    </div>
+    <div class="branch" onclick="showContent(4)">
+        <div class="sticky-note">Chapter Four: How to Protect Yourself from Scams</div>
+    </div>
+    <div class="branch" onclick="showContent(5)">
+        <div class="sticky-note">Chapter Five: What to Do if You Are Scammed</div>
+    </div>
+</div>
+
+<div id="content-1" class="content">
+    <h2>What is Scamming?</h2>
+    <style>
+        p {
+            text-align: justify;
+        }
+    </style>
+    <p>Scamming is when someone deceives or tricks you into giving up money, personal information, or valuables. Scammers use dishonest tactics, making it appear that they are trustworthy or legitimate. Scammers often try to exploit emotions like fear, urgency, or excitement to manipulate people into making quick decisions without thinking clearly.
+
+        A scammer’s goal is usually to get access to sensitive information, steal money, or perform an illegal action without the victim’s knowledge. Scammers might pretend to be from well-known companies, government agencies, or even people you know personally. They use emails, phone calls, text messages, and fake websites to trick victims.
+        
+        In many scams, criminals try to convince you to send money or share your personal information such as credit card details, social security numbers, or login credentials for online accounts. Scammers often use fake or misleading information to create a sense of trust, hoping that the victim won't question their motives.
+        
+        <h3>Types of Scams Include:</h3>
+        <ul>
+        <li><strong>Lottery and Prize Scams:</strong> The scammer claims you've won a prize and asks for payment or personal details to claim it.</li>
+        <li><strong> Tech Support Scams:</strong> Scammers pose as technicians from well-known companies, offering fake services to fix non-existent issues with your computer or device.</li>
+        <li><strong>Romance Scams:</strong> Scammers build online relationships and eventually convince victims to send money for supposed emergencies.</li>
+        Scamming is not just a personal issue; it’s also a global concern. Criminals are constantly finding new ways to exploit people, especially as technology becomes more sophisticated. It’s important to be aware of how scams work and take steps to protect yourself.
+        <a href="https://consumer.ftc.gov/scams" target="_blank"> More Details</a>
+
+         </ul>
+         </p>
+     
+    <a href="javascript:void(0)" class="back-button" onclick="goBack()">Back</a>
+</div>
+
+<div id="content-2" class="content">
+    <h2>Common Types of Scams</h2>
+    <ul>
+        <style>
+            p {
+            text-align: justify;
+        }
+        </style>
+        <li><strong>Phishing:</strong> Phishing is one of the most common online scams. Scammers send fake emails, text messages, 
+            or social media posts that appear to come from trusted companies, like banks, tech companies, or retailers. 
+            These messages often ask you to click a link, download an attachment, or enter personal details such as your username 
+            and password. The goal is to steal sensitive information like login credentials or financial details.
+            Phishing can be hard to spot because these emails or messages often look legitimate, using company logos and official-sounding
+            language. Scammers may also use urgency to pressure victims into acting quickly.</li>
+
+        <li><strong>Vishing:</strong> Vishing occurs when scammers call you over the phone, pretending to be from a trusted organization like a bank, 
+            credit card company, or even government agency. They might claim there’s an issue with your account or offer you a prize. 
+            They then ask for your personal information, such as your account number, passwords, or social security number.</li>
+
+        <li><strong>Online Shopping Scams:</strong> Fake online stores that steal money without delivering products.</li>
+        <li><strong>Investment Scams:</strong> Schemes promising high returns with little risk, such as Ponzi schemes.</li>
+        <li><strong>Romance Scams:</strong> Scammers build fake online relationships to exploit victims emotionally and financially.</li>
+        <li><strong>Tech Support Scams:</strong> Fraudulent tech support companies claiming to fix issues while gaining access to personal devices.</li>
+    </ul>
+    <a href="javascript:void(0)" class="back-button" onclick="goBack()">Back</a>
+</div>
+
+<div id="content-3" class="content">
+    <h2>Profiles of Scammers</h2>
+    <ul>
+        <li><strong>Cybercriminals:</strong> Individuals or groups using technology to carry out scams, often operating across borders.</li>
+        <li><strong>Organized Crime Syndicates:</strong> Groups involved in large-scale fraud, often linked to other crimes.</li>
+        <li><strong>Insiders:</strong> Employees or contractors who exploit their access to commit fraud within organizations.</li>
+    </ul>
+    <a href="javascript:void(0)" class="back-button" onclick="goBack()">Back</a>
+</div>
+
+<div id="content-4" class="content">
+    <h2>Global Impact and Statistics</h2>
+    <p>Scams lead to billions in global losses each year. Some key statistics include:</p>
+    <ul>
+        <li><strong>Financial Losses:</strong> $1.02 trillion globally from August 2022 to August 2023.</li>
+        <li><strong>Consumer Reports:</strong> The FTC received 2.6 million fraud reports in 2023, with imposter scams being the most common.</li>
+        <li><strong>Cybercrime Complaints:</strong> The FBI received 880,418 complaints in 2023, a 10% increase from 2022.</li>
+        <li><strong>Global Fraud Losses:</strong> The cybercrime industry generates up to $4.5 trillion annually.</li>
+    </ul>
+    <a href="javascript:void(0)" class="back-button" onclick="goBack()">Back</a>
+</div>
+
+<div id="content-5" class="content">
+    <h2>Protective Measures</h2>
+    <ul>
+        <li><strong>Education:</strong> Stay informed about common scams and tactics.</li>
+        <li><strong>Verification:</strong> Always verify unsolicited communications before sharing information.</li>
+        <li><strong>Security Practices:</strong> Use strong passwords and enable multi-factor authentication.</li>
+        <li><strong>Reporting:</strong> Report scams to authorities to help prevent further fraud.</li>
+    </ul>
+    <a href="javascript:void(0)" class="back-button" onclick="goBack()">Back</a>
+</div>
+
+<div id="chart-container" style="display: block;">
+    <canvas id="scamChart"></canvas>
+</div>
+
+<footer>
+    <p>&copy; 2025 Cybersecurity Awareness</p>
+</footer>
+
+<script>
+    function showContent(id) {
+        const contents = document.querySelectorAll('.content');
+        contents.forEach(content => content.classList.remove('active-content'));
+
+        document.getElementById('chart-container').style.display = 'none';
+
+        document.getElementById('content-' + id).classList.add('active-content');
+
+        const branches = document.querySelectorAll('.branch');
+        branches.forEach(branch => branch.style.display = 'none');
+    }
+
+    function goBack() {
+        const contents = document.querySelectorAll('.content');
+        contents.forEach(content => content.classList.remove('active-content'));
+        
+        const branches = document.querySelectorAll('.branch');
+        branches.forEach(branch => branch.style.display = 'inline-block');
+
+        document.getElementById('chart-container').style.display = 'block';
+    }
+
+    const ctx = document.getElementById('scamChart').getContext('2d');
+    const scamChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Phishing', 'Vishing', 'Tech Support', 'Investment', 'Romance'],
+            datasets: [{
+                label: 'Scam Types 2024',
+                data: [100, 200, 50, 300, 150],
+                backgroundColor: ['#1e3a8a', '#00ff66', '#6a0dad', '#00bcd4', '#00d9ff'],
+                borderColor: ['#1e3a8a', '#00ff66', '#6a0dad', '#00bcd4', '#00d9ff'],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(tooltipItem) {
+                            return 'Value: ' + tooltipItem.raw;
+                        }
+                    }
+                }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
