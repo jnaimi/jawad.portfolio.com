@@ -89,5 +89,29 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 
+		<script>
+			// Disable right-click on the entire page
+			document.addEventListener('contextmenu', function (e) {
+				e.preventDefault();
+			});
+		
+			// Prevent dragging of images
+			document.querySelectorAll('img').forEach(img => {
+				img.setAttribute('draggable', false);
+			});
+		
+			// Disable keyboard shortcuts for saving
+			document.addEventListener('keydown', function (e) {
+				if ((e.ctrlKey && e.key === 's') || // Ctrl+S
+					(e.ctrlKey && e.key === 'u') || // Ctrl+U (View Source)
+					(e.ctrlKey && e.key === 'p') || // Ctrl+P (Print)
+					(e.metaKey && e.key === 's') || // Command+S (Mac)
+					(e.metaKey && e.key === 'u') || // Command+U (Mac)
+					(e.metaKey && e.key === 'p')) { // Command+P (Mac)
+					e.preventDefault();
+				}
+			});
+		</script>
+
 	</body>
 </html>
