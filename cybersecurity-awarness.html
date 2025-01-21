@@ -136,32 +136,73 @@
             width: 80%;
             margin: 40px auto;
         }
+        .sticky-note {
+    display: flex;
+    flex-direction: column; /* Ensures the chapter is above the title */
+}
+
+.chapter {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 14px;
+    color: #555;
+}
+
+        
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Cybersecurity Awareness</h1>
+    <h1><strong>Cybersecurity Awareness</strong></h1>
 </header>
+ 
+<head>
+    <style>
+        .tree {
+            margin-top: 75px; /* Adjust this value to control the space */
+        }
+    </style>
+</head>
 
-<div class="tree">
+<div class="tree" >
+  
     <div class="branch" onclick="showContent(1)">
-        <div class="sticky-note">Chapter One: What is Scamming?</div>
-        
+        <div class="sticky-note">
+            <div class="chapter"><strong>Chapter One:</strong></div>
+            <div class="title">What is Scamming?</div>
+        </div>
     </div>
     <div class="branch" onclick="showContent(2)">
-        <div class="sticky-note">Chapter Two: Common Types of Scams</div>
+        <div class="sticky-note">
+            <div class="chapter"><strong>Chapter Two:</strong></div>
+            <div class="title">Common Types of Scams</div>
+        </div>
     </div>
     <div class="branch" onclick="showContent(3)">
-        <div class="sticky-note">Chapter Three: How Scammers Trick People</div>
+        <div class="sticky-note">
+            <div class="chapter"><strong>Chapter Three:</strong></div>
+            <div class="title">How Scammers Trick People</div>
+        </div>
     </div>
     <div class="branch" onclick="showContent(4)">
-        <div class="sticky-note">Chapter Four: How to Protect Yourself from Scams</div>
+        <div class="sticky-note">
+            <div class="chapter"><strong>Chapter Four:</strong></div>
+            <div class="title">How to Protect Yourself from Scams</div>
+        </div>
     </div>
     <div class="branch" onclick="showContent(5)">
-        <div class="sticky-note">Chapter Five: What to Do if You Are Scammed</div>
+        <div class="sticky-note">
+            <div class="chapter"><strong>Chapter Five:</strong></div>
+            <div class="title">What to Do if You Are Scammed</div>
+        </div>
     </div>
 </div>
+
 
 <div id="content-1" class="content">
     <h2>What is Scamming?</h2>
@@ -170,7 +211,7 @@
             text-align: justify;
         }
     </style>
-    <p>Scamming is when someone deceives or tricks you into giving up money, personal information, or valuables. Scammers use dishonest tactics, making it appear that they are trustworthy or legitimate. Scammers often try to exploit emotions like fear, urgency, or excitement to manipulate people into making quick decisions without thinking clearly.
+    <p style="line-height: 1.8;">Scamming is when someone deceives or tricks you into giving up money, personal information, or valuables. Scammers use dishonest tactics, making it appear that they are trustworthy or legitimate. Scammers often try to exploit emotions like fear, urgency, or excitement to manipulate people into making quick decisions without thinking clearly.
 
         A scammer’s goal is usually to get access to sensitive information, steal money, or perform an illegal action without the victim’s knowledge. Scammers might pretend to be from well-known companies, government agencies, or even people you know personally. They use emails, phone calls, text messages, and fake websites to trick victims.
         
@@ -178,10 +219,10 @@
         
         <h3>Types of Scams Include:</h3>
         <ul>
-        <li><strong>Lottery and Prize Scams:</strong> The scammer claims you've won a prize and asks for payment or personal details to claim it.</li>
-        <li><strong> Tech Support Scams:</strong> Scammers pose as technicians from well-known companies, offering fake services to fix non-existent issues with your computer or device.</li>
-        <li><strong>Romance Scams:</strong> Scammers build online relationships and eventually convince victims to send money for supposed emergencies.</li>
-        Scamming is not just a personal issue; it’s also a global concern. Criminals are constantly finding new ways to exploit people, especially as technology becomes more sophisticated. It’s important to be aware of how scams work and take steps to protect yourself.
+        <li style="line-height: 1.8;"><strong>Lottery and Prize Scams:</strong> The scammer claims you've won a prize and asks for payment or personal details to claim it.</li>
+        <li style="line-height: 1.8;"><strong> Tech Support Scams:</strong> Scammers pose as technicians from well-known companies, offering fake services to fix non-existent issues with your computer or device.</li>
+        <li style="line-height: 1.8;"><strong>Romance Scams:</strong> Scammers build online relationships and eventually convince victims to send money for supposed emergencies.</li>
+        <strong>Scamming is not</strong> just a personal issue; it’s also a global concern. Criminals are constantly finding new ways to exploit people, especially as technology becomes more sophisticated. It’s important to be aware of how scams work and take steps to protect yourself.
         <a href="https://consumer.ftc.gov/scams" target="_blank"> More Details</a>
 
          </ul>
@@ -198,28 +239,27 @@
             text-align: justify;
         }
         </style>
-        <li><strong>Phishing:</strong> Phishing is one of the most common online scams. Scammers send fake emails, text messages, 
+        <li style="line-height: 1.8;"><strong>Phishing:</strong> Phishing is one of the most common online scams. Scammers send fake emails, text messages, 
             or social media posts that appear to come from trusted companies, like banks, tech companies, or retailers. 
             These messages often ask you to click a link, download an attachment, or enter personal details such as your username 
             and password. The goal is to steal sensitive information like login credentials or financial details.
             Phishing can be hard to spot because these emails or messages often look legitimate, using company logos and official-sounding
             language. Scammers may also use urgency to pressure victims into acting quickly.</li>
 
-        <li><strong>Vishing:</strong> Vishing occurs when scammers call you over the phone, pretending to be from a trusted organization like a bank, 
+        <li style="line-height: 1.8;"><strong>Vishing:</strong> Vishing occurs when scammers call you over the phone, pretending to be from a trusted organization like a bank, 
             credit card company, or even government agency. They might claim there’s an issue with your account or offer you a prize. 
             They then ask for your personal information, such as your account number, passwords, or social security number.</li>
-
-        <li><strong>Online Shopping Scams:</strong> Fake online stores that steal money without delivering products.</li>
-        <li><strong>Investment Scams:</strong> Schemes promising high returns with little risk, such as Ponzi schemes.</li>
-        <li><strong>Romance Scams:</strong> Scammers build fake online relationships to exploit victims emotionally and financially.</li>
-        <li><strong>Tech Support Scams:</strong> Fraudulent tech support companies claiming to fix issues while gaining access to personal devices.</li>
+        <li style="line-height: 1.8;"><strong>Investment Scams:</strong> Schemes promising high returns with little risk, such as Ponzi schemes.</li>
+        <li style="line-height: 1.8;"><strong>Romance Scams:</strong> Scammers build fake online relationships to exploit victims emotionally and financially.</li>
+        <li style="line-height: 1.8;"><strong>Tech Support Scams:</strong> Fraudulent tech support companies claiming to fix issues while gaining access to personal devices.</li>
     </ul>
     <a href="javascript:void(0)" class="back-button" onclick="goBack()">Back</a>
 </div>
 
 <div id="content-3" class="content">
     <h2>Profiles of Scammers</h2>
-    <ul>
+    
+    <ul style="line-height: 1.8;">
         <li><strong>Cybercriminals:</strong> Individuals or groups using technology to carry out scams, often operating across borders.</li>
         <li><strong>Organized Crime Syndicates:</strong> Groups involved in large-scale fraud, often linked to other crimes.</li>
         <li><strong>Insiders:</strong> Employees or contractors who exploit their access to commit fraud within organizations.</li>
@@ -231,10 +271,10 @@
     <h2>Global Impact and Statistics</h2>
     <p>Scams lead to billions in global losses each year. Some key statistics include:</p>
     <ul>
-        <li><strong>Financial Losses:</strong> $1.02 trillion globally from August 2022 to August 2023.</li>
-        <li><strong>Consumer Reports:</strong> The FTC received 2.6 million fraud reports in 2023, with imposter scams being the most common.</li>
-        <li><strong>Cybercrime Complaints:</strong> The FBI received 880,418 complaints in 2023, a 10% increase from 2022.</li>
-        <li><strong>Global Fraud Losses:</strong> The cybercrime industry generates up to $4.5 trillion annually.</li>
+        <li style="line-height: 1.8;"><strong>Financial Losses:</strong> $1.02 trillion globally from August 2022 to August 2023.</li>
+        <li style="line-height: 1.8;"><strong>Consumer Reports:</strong> The FTC received 2.6 million fraud reports in 2023, with imposter scams being the most common.</li>
+        <li style="line-height: 1.8;"><strong>Cybercrime Complaints:</strong> The FBI received 880,418 complaints in 2023, a 10% increase from 2022.</li>
+        <li style="line-height: 1.8;"><strong>Global Fraud Losses:</strong> The cybercrime industry generates up to $4.5 trillion annually.</li>
     </ul>
     <a href="javascript:void(0)" class="back-button" onclick="goBack()">Back</a>
 </div>
@@ -242,10 +282,10 @@
 <div id="content-5" class="content">
     <h2>Protective Measures</h2>
     <ul>
-        <li><strong>Education:</strong> Stay informed about common scams and tactics.</li>
-        <li><strong>Verification:</strong> Always verify unsolicited communications before sharing information.</li>
-        <li><strong>Security Practices:</strong> Use strong passwords and enable multi-factor authentication.</li>
-        <li><strong>Reporting:</strong> Report scams to authorities to help prevent further fraud.</li>
+        <li style="line-height: 1.8;"><strong>Education:</strong> Stay informed about common scams and tactics.</li>
+        <li style="line-height: 1.8;"><strong>Verification:</strong> Always verify unsolicited communications before sharing information.</li>
+        <li style="line-height: 1.8;"><strong>Security Practices:</strong> Use strong passwords and enable multi-factor authentication.</li>
+        <li style="line-height: 1.8;"><strong>Reporting:</strong> Report scams to authorities to help prevent further fraud.</li>
     </ul>
     <a href="javascript:void(0)" class="back-button" onclick="goBack()">Back</a>
 </div>
@@ -255,8 +295,21 @@
 </div>
 
 <footer>
-    <p>&copy; 2025 Cybersecurity Awareness</p>
+    <p>&copy; Jawad Naimi</p>
 </footer>
+
+<style>
+    footer {
+        text-align: center; /* Centers the text horizontally */
+        position: fixed; /* Fixes the position at the bottom of the page */
+        left: 0;
+        bottom: 0; /* Positions it at the bottom */
+        width: 100%; /* Ensures it spans the entire width */
+        background-color: #333; /* Optional: Adds background color */
+        color: white; /* Optional: Sets the text color */
+        padding: 10px; /* Optional: Adds padding for better spacing */
+    }
+</style>
 
 <script>
     function showContent(id) {
@@ -282,36 +335,41 @@
     }
 
     const ctx = document.getElementById('scamChart').getContext('2d');
-    const scamChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Phishing', 'Vishing', 'Tech Support', 'Investment', 'Romance'],
-            datasets: [{
-                label: 'Scam Types 2024',
-                data: [100, 200, 50, 300, 150],
-                backgroundColor: ['#1e3a8a', '#00ff66', '#6a0dad', '#00bcd4', '#00d9ff'],
-                borderColor: ['#1e3a8a', '#00ff66', '#6a0dad', '#00bcd4', '#00d9ff'],
-                borderWidth: 1
-            }]
+const scamChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Phishing', 'Vishing', 'Tech Support', 'Investment', 'Romance'],
+        datasets: [{
+            label: 'Scam Types 2024',
+            data: [100, 200, 50, 300, 150],
+            backgroundColor: ['#1e3a8a', '#00ff66', '#6a0dad', '#00bcd4', '#00d9ff'],
+            borderColor: ['#1e3a8a', '#00ff66', '#6a0dad', '#00bcd4', '#00d9ff'],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        animation: {
+            duration: 6000, // Animation duration in milliseconds
+            easing: 'easeOutBounce' // Easing function for a smoother effect
         },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: {
-                    position: 'top',
-                },
-                tooltip: {
-                    callbacks: {
-                        label: function(tooltipItem) {
-                            return 'Value: ' + tooltipItem.raw;
-                            
-                        }
+        plugins: {
+            legend: {
+                position: 'top',
+            },
+            tooltip: {
+                callbacks: {
+                    label: function(tooltipItem) {
+                        return 'Value: ' + tooltipItem.raw;
                     }
                 }
             }
         }
-    });
+    }
+});
+
 </script>
+
 
 
 </body>
