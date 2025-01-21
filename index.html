@@ -360,7 +360,8 @@
 							<h2><strong>Cybersecurity Awarness</strong></h2>
 							<p>This is a personal project that I work on in my spare time. If you'd like to learn what scams are and how they work, you can explore some basic information about them. This is a work-in-progress project, and you can get started by clicking 'Learn More.'</p>
 							<ul class="actions">
-								<li><a href="cybersecurity-awarness.html" class="button">Learn More</a></li>
+								<li><a href="cybersecurity-awarness.html" target="_blank" style="margin-right: 20px; display: inline-block;">
+                                    <button style="padding: 10px 15px; background-color: #ffcc80; color: white; border: none; border-radius: 50px; font-size: 18px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); display: flex; align-items: center; justify-content: center; gap: 8px;">Learn More</a></li>
 							</ul>
 						</section>
 						<section>
@@ -411,6 +412,10 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            <script>
+                document.addEventListener('selectstart', (e) => e.preventDefault());
+              </script>
+              
 
             <script>
                 // Disable right-click on the entire page
@@ -435,7 +440,15 @@
                     }
                 });
             </script>
-            
+            <style>
+                body {
+                  -webkit-user-select: none; /* Chrome, Safari, Edge */
+                  -moz-user-select: none;    /* Firefox */
+                  -ms-user-select: none;     /* Internet Explorer */
+                  user-select: none;         /* Standard property */
+                }
+              </style>
+              
 
 	</body>
 </html>

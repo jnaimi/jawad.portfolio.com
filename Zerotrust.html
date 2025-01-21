@@ -88,7 +88,10 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-
+		<script>
+			document.addEventListener('selectstart', (e) => e.preventDefault());
+		  </script>
+		  
 		<script>
 			// Disable right-click on the entire page
 			document.addEventListener('contextmenu', function (e) {
@@ -112,6 +115,14 @@
 				}
 			});
 		</script>
-
+<style>
+	body {
+	  -webkit-user-select: none; /* Chrome, Safari, Edge */
+	  -moz-user-select: none;    /* Firefox */
+	  -ms-user-select: none;     /* Internet Explorer */
+	  user-select: none;         /* Standard property */
+	}
+  </style>
+  
 	</body>
 </html>
